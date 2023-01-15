@@ -1,0 +1,265 @@
+@media screen and (max-width: 991px) {
+	.header-navigation{
+		min-width: 320px;
+		&__item {
+			margin-left: 25px;
+		}
+		&__link {
+			font-size: 18px;
+		}
+	}
+	.search {
+		margin-left: 20px;
+	}
+	.header-bottom {
+		&__text-title {
+			padding-top: 130px;
+		}
+		&__title-text {
+			line-height: 120%;
+			font-size: 45px;
+		}
+		&__subtitle-text {
+			font-size: 22px;
+			line-height: 140%;
+		}
+	}
+	.section {
+		padding: 60px 0;
+	}
+	.heading-section {
+		margin-bottom: 60px;
+	}
+	.section-content-services {
+			&__block {
+				width: 50%;
+	
+			}
+	}
+	.section-content-services-work {
+		margin: 60px -15px;
+	
+			&__work {
+				width: 50%;
+			}
+	}
+	.work-btn {
+		padding: 15px 35px;
+		margin: 0 5px;
+		}
+}
+@media screen and (max-width: 768px) {
+	.header-top {
+		position: fixed;
+		z-index: 100;
+		width: 100%;
+	}
+	.header-bottom {
+		padding-top: 100px;
+	}
+	.logo {
+		position: relative;
+		z-index: 100;
+	}
+	.header-navigation-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 12px 15px;
+		background-color: #fff;
+	}
+	.nav-menu {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		z-index: 50;
+		background-color: #00897b;
+		&:after {
+			content: "";
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 55px;
+			background-color: transparent;
+			z-index: 70;
+		}
+		
+	}
+	.nav-menu.menu--active {
+		left: 0;
+		&:after {
+			background-color: #00897b;
+		}
+
+	}
+	.header-navigation{
+		margin-top: 70px;
+		margin-bottom: 50px;
+		display: block;
+		
+		&__menu {
+			display: block;
+			padding-bottom: 60px;
+		}
+		&__item {
+			padding-top: 20px;
+			margin-left: 30px;
+			&:first-child {
+				margin-left: 30px;
+			}
+		}
+		&__link {
+			color: #fff;
+			font-size: 20px;
+			line-height: 100%;
+			&::after {
+				display: none;
+			}
+		}
+	}
+	@import "components/burger";
+	.search {
+		margin-top: 20px;
+		margin-left: 30px;
+		justify-content: flex-start;
+		&__text {
+			display: block;
+		}
+	}
+	.magnifier-svg {
+		fill: #fff;
+	}
+	.section-content-about {
+			width: 100%;
+	}
+	.section-content-services {
+		&__block {
+			width: 100%;
+
+		}
+	}
+	.section-content-services-work {
+
+			&__work {
+				width: 100%;
+			}
+	}
+	.section-content-plan {
+		flex-direction: column;
+		&__block {
+			width: 100%;
+			max-width: 370px;
+		}
+	}
+	.section-content-blog {
+		margin-bottom: 60px;
+	
+			&__block-blog {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 30px;
+			} 
+			&__block-blog:nth-child(2) {
+				display: flex;
+				flex-direction: column;
+			} 
+			&__block-blog:nth-child(2n+1) .section-content-blog__blog-text {
+				padding-left: 0;
+			}
+			&__blog-img {
+				width: 100%;
+			}
+			&__blog-text {
+				width: 100%;
+				margin: 0 auto;
+			}
+			&__blog-title {
+				margin-top: 20px;
+			}
+	}
+	.section-content-contacts {
+		&__block-contacts {
+			flex-direction: column;
+		}
+		&__block-contact {
+			margin-bottom: 40px;
+		}
+	}
+	.form-contact {
+		&__input	{
+			flex-direction: column;
+		}
+		&__block-input {
+			max-width: 100%;
+			margin-left: 0;
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.work-btn-slider {
+	
+		&__wrapper {
+			justify-content: flex-start;
+		}
+	}
+	.content-block-plan {
+		&__btn {
+			padding: 30px 0;
+		}
+	}
+}
+@media screen and (max-width: 520px) {
+	.header-bottom__text-title {
+		padding-top: 65px;
+		padding-bottom: 65px;
+		}
+		.header-bottom__title-text {
+			font-size: 32px;
+		}
+		.header-bottom__subtitle-text {
+		font-size: 16px;
+		}
+		.header-buttons {
+		flex-direction: column;
+		}
+		.header-buttons__btn {
+		display: flex;
+		width: 220px;
+		height: 70px;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid #fff;
+		margin: 5px auto;
+		}
+		.header-buttons__link {
+		border: none;
+		}
+		.header-buttons__link:hover {
+		border: none;
+		background: none;
+		}
+		.header-arrow {
+		padding-top: 70px;
+		}
+		.section-content-services {
+			&__block-border {
+				padding: 50px 10px;
+			}
+		}
+		.section-content-blog {
+			&__column {
+				margin-left: 25px;
+			}
+			&__blog-column-text {
+				margin-left: 10px;
+			}
+		}
+	}
+@media screen and (max-width: 320px) {
+}

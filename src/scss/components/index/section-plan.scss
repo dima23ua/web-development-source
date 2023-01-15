@@ -1,0 +1,91 @@
+.silver {
+	background-color: #f0f1f1;
+}
+.section-content-plan {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 -15px;
+
+		&__block {
+			display: flex;
+			justify-content: center;
+			width: 33.333%;
+			max-width: 400px;
+		}
+		&__block-border {
+			text-align: center;
+			width: 100%;
+			margin: 15px;
+			background-color: #fff;
+			&:hover {
+				transition: 0.2s linear;
+				box-shadow: 0px 7px 9px 4px rgba(34, 60, 80, 0.2);
+			}
+		}
+
+		&__block-heading {
+			background: url("../img/plan-bg.png") no-repeat center top/cover;
+			color: #fff;
+			text-align: center;
+			padding-bottom: 65px;
+		}
+
+		&__title {
+			padding-top: 50px;
+			padding-bottom: 35px;
+			font-size: 25px;
+			line-height: 120%;
+		}
+
+		&__subtitle {
+			font-size: 50px;
+		}
+
+		&__uppercase {
+			font-size: 25px;
+			vertical-align: super;
+		}
+
+		&__lower-case {
+			font-size: 17px;
+		}
+}
+.content-block-plan {
+	padding-top: 15px;
+
+		&__text {
+			margin: 0 auto;
+			text-align: center;
+			width: 180px;
+			padding: 35px 0 15px;
+			border-bottom: 1px solid #bfbfbf;
+			font-weight: 300;
+			font-size: 17px;
+			line-height: 150%;
+		}
+
+		&__btn {
+			display: flex;
+			justify-content: center;
+			padding: 60px 0;
+		}
+
+		&__link {
+			font-weight: 600;
+			font-size: 17px;
+			line-height: 150%;
+			text-transform: uppercase;
+			padding: 20px 40px;
+			border: 2px solid #000;
+			cursor: pointer;
+			
+			&:hover {
+				background: #00897b;
+				color: #fff;
+				border: 2px solid #00897b;
+				transition: 0.2s linear;
+			}
+		}
+}

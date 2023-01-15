@@ -1,0 +1,74 @@
+.section-content-blog {
+	margin-bottom: 150px;
+
+		&__block-blog {
+			display: flex;
+			flex-direction: row;
+		} 
+		&__block-blog:nth-child(2n){
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		&__block-blog:nth-child(2n+1) .section-content-blog__blog-text {
+			padding-left: 15px;
+		}
+		&__blog-img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50%;
+			max-width: 570px;
+			max-height: 400px;
+			overflow: hidden;
+			margin: 0 auto;
+			& img {
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+			}
+		}
+		&__blog-text {
+			width: 50%;
+			max-width: 570px;
+		}
+		&__blog-title {
+			margin-top: 45px;
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 150%;
+		}
+		&__blog-title-link {
+			color: #212121;
+			&:hover {
+				transition: 0.3s linear;
+				color: #00897b;
+				cursor: url("../img/blog-img/mouse-point.png"), pointer;
+			}
+		}
+		&__blog-subtitle {
+			display: flex;
+		}
+		&__column {
+			display: flex;
+			align-items: center;
+			margin-left: 40px;
+			padding: 25px 0;
+			font-weight: 600;
+			font-size: 17px;
+			line-height: 100%;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		&__blog-column-text {
+			margin-left: 15px;
+		}
+		&__blog-text-content {
+			width: 100%;
+			max-width: 400px;
+			word-wrap: wrap;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 150%;
+		}
+}
